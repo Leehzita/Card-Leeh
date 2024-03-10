@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biografia - Leeh</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Adicionado para não colar nos cantos */
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px; /* Adicionado para limitar no desktop */
+    text-align: center;
+    margin: auto; /* Centralização no mobile */
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px; /* Arredondar as bordas da imagem */
+    border-top-right-radius: 8px;
+  }
+
+  .card h1 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 22px;
+    color: #333;
+  }
+
+  .card p {
+    padding: 0 20px 20px;
+    margin: 0;
+    color: #666;
+  }
+
+  /* Media query para telas maiores (desktop) */
+  @media (min-width: 768px) {
+    body {
+      height: auto;
+    }
+    .card {
+      transition: transform 0.3s ease; /* Efeito legalzinho ao pairar */
+    }
+    .card:hover {
+      transform: translateY(-10px); /* Levanta o card quando passa o mouse */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img src="https://cdn.discordapp.com/avatars/738228868749590618/dd5b2c83e1d10f4469f852c5ff3d81cc.webp" alt="Foto de Leeh">
+  <h1>Leeh</h1>
+  <p>Olá! Eu sou Leeh, e este é um exemplo simples de card estilo biografia. Sinta-se à vontade para editar e fazer deste o seu próprio cartão de visita virtual!</p>
+</div>
+
+</body>
+</html>
